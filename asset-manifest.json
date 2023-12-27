@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/twenty-five-plus-five-clock/static/css/main.b47e96ce.css",
+    "main.js": "/twenty-five-plus-five-clock/static/js/main.9d78fb84.js",
+    "index.html": "/twenty-five-plus-five-clock/index.html",
+    "main.b47e96ce.css.map": "/twenty-five-plus-five-clock/static/css/main.b47e96ce.css.map",
+    "main.9d78fb84.js.map": "/twenty-five-plus-five-clock/static/js/main.9d78fb84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b47e96ce.css",
+    "static/js/main.9d78fb84.js"
+  ]
+}
