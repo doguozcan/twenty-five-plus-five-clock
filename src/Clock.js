@@ -13,7 +13,12 @@ function Clock() {
   const [timeLeft, setTimeLeft] = useState(25 * 60);
   const [paused, setPaused] = useState(true);
   const [isBreak, setIsBreak] = useState(false);
-  const audio = document.getElementById("beep");
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    const audioElement = document.getElementById("beep");
+    setAudio(audioElement);
+  }, []);
 
   function handleBreak(break_) {
     const newBreak = breakLength + break_;
@@ -36,8 +41,10 @@ function Clock() {
     setTimeLeft(25 * 60);
     setPaused(true);
     setIsBreak(false);
-    audio.pause();
-    audio.currentTime = 0;
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
   }
 
   useEffect(() => {
